@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-     <%@ page import="java.util.*,
+<%@ page import="java.util.*,
           dao.*,
-          modelo.*" %>
+          modelo.*" %>          
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +19,7 @@
    	 	 <th>Email</th>
    	 	 <th>Endereco</th>
    	 	 <th>Data de Nascimento</th>
- 
+ 		 <th></th>
   		 </tr>
   	 </thead>
   	 <tbody>
@@ -34,6 +34,9 @@
         <td><%=contato.getEmail() %></td>
         <td><%=contato.getEndereco() %></td>
         <td><%=contato.getDataNascimento().getTime() %></td>
+        <td>
+        <a href="mvc?logica=RemoveContatoLogica&id=${contato.id}">Remover</a>
+        </td>
       </tr>
     <%
       }
