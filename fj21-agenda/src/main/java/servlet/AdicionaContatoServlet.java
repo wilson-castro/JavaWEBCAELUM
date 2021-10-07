@@ -22,6 +22,11 @@ public class AdicionaContatoServlet extends HttpServlet {
             HttpServletResponse response)
             throws IOException, ServletException {
     	
+    	
+    	// void doGet(HttpServletRequest req, HttpServletResponse res);
+
+    	// void doPost(HttpServletRequest req, HttpServletResponse res);
+    	
         // busca o writer
         PrintWriter out = response.getWriter();
 
